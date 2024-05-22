@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  font-size: 0.9375em;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", "sans-serif";
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.2em;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.main-page-1, .main-page-2 {
+  display: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 1em;
+  padding: 2em;
+}
+
+.main-page-2 {
+  text-align: center;
+}
+
+.main-page-1.active, .main-page-2.active {
+  display: block;
+}
+
+.main-img img {
+  border: 1px solid hsl(213, 19%, 18%);
+  background-color: hsla(217, 12%, 63%, 0.2);
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.main-page-1 p, .main-page-2 p {
+  font-weight: 200;
+}
+
+.main-title, .page-2-title {
+  margin-top: 0.5em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em 0;
+}
+
+.buttons button {
+  border-radius: 50%;
+  border: 1px solid hsl(213, 19%, 18%);
+  padding: 1.75em;
+  width: 2.75em;
+  height: 2.75em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(217, 12%, 63%, 0.2);
+  color: hsl(0, 0%, 100%);
+}
+
+.buttons button:hover {
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.active {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+
+.submit button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 1.25em;
+  width: 100%;
+  border-radius: 1.75em;
+  background-color: hsl(25, 97%, 53%);
+  border: 1px solid hsl(213, 19%, 18%);
+  padding: 1em;
+}
+
+.submit button:hover {
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.main-page-1 {
+  display: block;
+}
+
+.page2-title p {
+  display: inline-flex;
+  border-radius: 1.75em;
+  margin-top: 0.5em;
+  padding: 0.2em 1em;
+  color: hsl(25, 97%, 53%);
+  background-color: hsla(217, 12%, 63%, 0.2);
+}
+
+#rating {
+  margin: 0 0.2em;
+}
+
+/*# sourceMappingURL=styles.css.map */
